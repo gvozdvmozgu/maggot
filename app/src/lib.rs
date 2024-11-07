@@ -11,7 +11,7 @@ pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
-        <Stylesheet id="leptos" href="/pkg/maggot.css"/>
+        <Stylesheet href="/pkg/maggot.css"/>
 
         <Router fallback=|| {
             let mut outside_errors = Errors::default();
@@ -29,5 +29,7 @@ pub fn App() -> impl IntoView {
 
 #[component]
 fn HomePage() -> impl IntoView {
-    view! {}
+    view! {
+        <p>"Hello, world!"</p>
+    }
 }

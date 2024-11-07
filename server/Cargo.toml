@@ -13,3 +13,4 @@ simple_logger.workspace = true
 tokio.workspace = true
 tower-http.workspace = true
 tower.workspace = true
+anyhow = "1.0"
